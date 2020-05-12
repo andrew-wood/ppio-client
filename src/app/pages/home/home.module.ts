@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
+import { HomeComponent } from './home.component'
 import { NgModule } from '@angular/core';
-import { PlayerFormComponent } from 'app/player-form/player-form.component';
+import { PlayerFormComponent } from '../../player-form/player-form.component';
 
 @NgModule({
-    imports: [CommonModule, PlayerFormComponent],
-    declarations: [HomeComponent],
-    exports: [HomeComponent],
+    declarations: [HomeComponent, PlayerFormComponent],
+    imports: [],
+    providers: [],
+    exports: [HomeComponent]
 })
 export class HomeModule {}
